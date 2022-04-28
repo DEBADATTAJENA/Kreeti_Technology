@@ -1,0 +1,652 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+
+/* ------Header With NavBar----------- */
+
+.container {
+  width: 1535px;
+  margin: auto;
+  padding: auto;
+  height: 100vh;
+  background: white;
+  overflow-x: hidden;
+
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0% 2%;
+}
+
+header img {
+  width: 15px;
+  margin-right: 5px;
+}
+
+header p {
+  padding-right: 7px;
+}
+
+nav {
+  width: 100%;
+  padding: 0 2%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 10px;
+
+}
+
+nav ul li a {
+
+  text-decoration: none;
+  color: black;
+
+
+}
+
+nav ul li a.active {
+  color: rgb(10, 223, 10);
+}
+
+nav ul li a:hover {
+  color: rgb(10, 223, 10);
+}
+
+nav .menu-btn i {
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+#click {
+  display: none;
+}
+
+/* ------ Content------- */
+
+/*-------left Content---------*/
+main {
+  display: flex;
+  width: 100%;
+
+}
+.wrapper{
+  width: 100%;
+  background: rgb(10, 223, 10);
+}
+
+form {
+  width: 100%;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+  
+}
+
+form .title {
+  font-size: 35px;
+  margin-bottom: 1.2rem;
+  color: white;
+}
+
+
+
+
+
+
+
+.inputfield_up {
+  
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.inputfield_up label {
+  width: 50%;
+  color: white;
+  font-size: 14px;
+}
+
+.inputfield_up input {
+  outline: none;
+  width: 100%;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  margin-right: 1rem;
+
+ 
+}
+
+.inputfield_down {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.field_container {
+  
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.input_container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0;
+}
+
+.input1 {
+
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 0.5rem;
+ 
+
+
+}
+
+.input_img {
+  align-items: flex-end;
+  margin-right: 15px;
+  bottom: 8px;
+  margin-left: -20px;
+  width: 20px;
+  height: 20px;
+}
+
+.inputfield_down label {
+  color: rgb(255, 253, 253);
+  font-size: 14px;
+  margin-right: 15px;
+  width: 30%;
+}
+
+
+.btn {
+  width: 66%;
+  position: relative;
+  margin-right: 15px;
+  left: 32%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0px;
+  background: #070000;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+
+
+/*--------right content------------*/
+
+
+picture {
+  width: 100%;
+
+}
+
+picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+/* --------Grid Service Content----------- */
+
+section {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  padding: 3rem 1.5rem;
+}
+
+.First {
+  background-color: white;
+  display: flex;
+}
+
+.heading {
+  color: rgb(100, 87, 87);
+  margin-right: 1rem;
+
+}
+
+.heading img {
+  width: 30px;
+
+}
+.title h3{
+  margin-bottom: 1rem;
+}
+
+.title p {
+  color:rgba(138, 138, 136, 0.796);
+  margin-bottom: 1rem;
+}
+
+.title a {
+  color: rgb(35, 253, 6);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/*-----------footer--------------*/
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: rgb(213, 213, 216);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  padding: 1.5rem;
+  column-gap: 15px;
+}
+
+.realestate h4 {
+  margin-bottom: 1.5rem;
+}
+
+.links {
+  width: 100%;
+  position: relative;
+  left: 8rem;
+}
+.links1 {
+  width: 100%;
+  position: relative;
+  left: 2rem;
+}
+
+.links h4, .links1 h4 {
+  margin-bottom: 1rem;
+}
+
+.links ul li, .links1 ul li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+.links ul li a, .links1 ul li a {
+  text-decoration: none;
+  color: rgb(8, 0, 0);
+
+}
+
+.newsletter h4 {
+  margin-bottom: 1.5rem;
+}
+
+.signup {
+  display: flex;
+
+}
+
+.Input {
+  flex: 1;
+  width: 100%;
+  border: none;
+  height: 30px;
+  padding: 5px;
+}
+
+.button {
+
+  width: 30%;
+  background-color: rgb(0, 255, 34);
+  border: none;
+}
+
+.copyright {
+  text-align: center;
+
+  width: 100%;
+  height: auto;
+  background-color: darkgrey;
+}
+
+.copyright p {
+  padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- Media Query ---------------------*/
+
+
+
+@media (max-width: 430px) {
+
+html, body { 
+    font-size: 88%;
+}
+.container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+header{
+  position: relative;
+  right: 3px;
+}
+form .title{
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+.inputfield_up, .inputfield_down{
+  margin-bottom: 8px;
+}
+
+
+  /*------- Navbar ---------*/
+  
+  nav ul {
+    position: fixed;
+    top: 90px;
+    left: -100%;
+    background: #111;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+
+  }
+
+  input[type=checkbox]:checked~ul {
+    left: 0%;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    color: white;
+  }
+
+  nav .menu-btn i {
+    display: block;
+    position: relative;
+    right: 10px;
+  }
+
+
+
+
+  /* ---------- Search Options ------------ */
+
+
+
+
+  picture {
+    display: none;
+  }
+
+  form {
+    max-width: 100%;
+    padding-left: 1rem;
+    
+  }
+
+  .inputfield_up {
+    width: 100%;
+    padding-right: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .inputfield_up label {
+    margin-bottom: 5px;
+  }
+
+  .inputfield_down {
+
+    flex-direction: column;
+    align-items: flex-start;
+   
+  
+  }
+
+  .input1 {
+    max-width: 100% ;
+
+  }
+
+  .inputfield_down label {
+    margin-bottom: 5px;
+
+  }
+
+  
+
+  .inputfield_up .btn {
+    width: 100%;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    left: 0%;
+  }
+
+
+
+
+  /* ----------------- services ---------------------*/
+
+  section {
+    max-width: 100%;
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 100%;
+    padding-left: 1rem;
+   
+  }
+  .title h3{
+    margin-bottom: 1rem;
+  }
+  .title p{
+    margin-bottom: 1rem;
+  }
+
+
+
+  /* ------------------- footer --------------------*/
+
+  footer {
+    
+    width: 100%;
+    height: auto;
+    background-color: rgb(213, 213, 216);
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    justify-content: space-between;
+  }
+
+  .realestate {
+    margin-bottom: 2rem;
+  }
+
+  .links {
+    width: 100%;
+    padding-bottom: 2.5rem;
+    position: relative;
+    left: 0;
+    
+    
+    
+  
+  }
+  
+ 
+  
+  .links1{
+    width: 100%;
+    position: relative;
+    left: 0;
+    padding-bottom: 2.5rem;
+  }
+
+
+  .links ul li, .links1 ul li {
+    text-align: justify;
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .newsletter {
+    position: relative;
+    top: 0.5rem;
+    padding-bottom: 2.5rem;
+   
+  }
+
+  .copyright {
+    height: auto;
+  }
+
+
+}
+
+
+
+
+@media (max-width: 769px) and (min-width: 431px){
+  .container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  html, body { 
+    font-size: 92%;
+  }
+  form{
+    position: relative;
+    padding-left: 1rem;
+    margin-right: 0;
+  }
+  
+  section{
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    padding-left: 1rem;
+  }
+
+  
+  .inputfield_down label{
+    width: 27%;
+   
+  }
+  .inputfield_up .btn{
+    position: relative;
+    left: 30%;
+  }
+  footer{
+    width: 100%;
+  }
+  .links{
+    position: relative;
+    left: 3rem;
+    
+  }
+  .links1{
+    position: relative;
+    left: 1rem;
+  }
+
+}
+
+
+@media (max-width: 1024px) and (min-width: 769px) {
+ 
+.container {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+html, body { 
+  font-size: 95%;
+}
+form .title{
+  position: relative;
+  right: 0.5rem;
+}
+.inputfield_up{
+  position: relative;
+  right: 0.5rem;
+}
+.inputfield_up label{
+  width: 49%;
+}
+
+
+.inputfield_down{
+  position: relative;
+  right: 0.5rem;
+}
+
+.inputfield_down label{
+  width: 28%;
+}
+
+.inputfield_up .btn{
+  position: relative;
+  left: 31%;
+  
+}
+  section{
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .links{
+    position: relative;
+    right: 1rem;
+  }
+  
+}
+@media (min-width: 1025px){
+  .container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+}
+
+
+
+
+
